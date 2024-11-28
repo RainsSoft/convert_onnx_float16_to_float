@@ -9,8 +9,11 @@ pip install -r requirements.txt
 2. 运行fp16转fp32的代码
 python3 convert.py fp16_model.onnx ./converted_fp32_model.onnx
 3. requirements.txt代码如下
-colorlog==4.7.2onnx==1.8.1numpy==1.18.5typer==0.3.2
-4. convert.py代码如下
+colorlog==4.7.2
+onnx==1.8.1
+numpy==1.18.5
+typer==0.3.2
+5. convert.py代码如下
 import onnx
 from onnx import helper as hfrom onnx import checker as chfrom onnx import TensorProto, GraphProtofrom onnx import numpy_helper as nph
 import numpy as npfrom collections import OrderedDict
